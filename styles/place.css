@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header: Poppins, sans-serif;
+    --red: rgb(243, 228, 22);
+    --body: Roboto, sans-serif;
+    --header-back: green;
+}
+
+body {
+    text-align: center;
+    font-family: var(--body);
+}
+
+h1, h2, h3 {
+    font-family: var(--header);
+}
+
+header {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    border-bottom: var(--red) solid 20px;
+}
+
+section {
+    border-bottom: solid 2px rgb(239, 239, 239);
+    padding-bottom: 20px;
+}
+
+h2{
+    padding: 30px;
+}
+
+p {
+    padding: 5px;
+}
+
+#emoji {
+    display: none;
+}
+
+#temperature::after {
+    content: "°F";
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--red);
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: var(--header);
+}

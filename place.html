@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place | WDD 131 | Carlos Silva</title>
+    <meta name="description" content="Brazil is the best country ever.">
+    <meta name="author" content="Carlos Silva">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images\640px-Flag_of_Brazil.svg.png" alt="Brasil Flag" width="40" height="40">
+        <h1>Brazil</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source media="(min-width: 650px)" srcset="images\pexels-florencia-potter-82066-351283.jpg"> 
+            <img src="images\pexels-florencia-potter-82066-351283.jpg" alt="Brasil hero" width="350" height="350">
+        </picture>
+        
+        <section class="data">
+            <h2>Data</h2>
+            <p>Area: 8.510.000 Kilometers</p>
+            <p>Population: 203.062.512</p>
+            <p>Capital: Brasília </p>
+            <p>Language: Portuguese </p>
+            <p>Currency: Reais </p>
+            <p>Time Zone: GMT -3 </p>
+            <p>Calling Code: +55 </p>
+            <p>Internet TLD: .br </p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather <span id="emoji">🌤️</span></h2>
+            
+            <div id="svg">
+                <img src="images/weather-icon.svg" alt="Weather icon for mobile view" width="100" height="100">
+            </div>
+            
+            <p id="temperature"></p>
+            <p id="conditions">Conditions: Partly Cloudy</p>
+            <p id="wind"></p>
+            <p id="windchill"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Carlos Silva - Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
